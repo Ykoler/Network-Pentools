@@ -1,3 +1,8 @@
+"""
+This script implements a simple SSH server.
+It stores passwords for users and allows clients to save and retrieve passwords.
+"""
+
 import argparse
 import pathlib
 import asyncio
