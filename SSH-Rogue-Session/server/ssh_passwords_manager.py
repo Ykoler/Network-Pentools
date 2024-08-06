@@ -209,6 +209,6 @@ def main(args):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     asyncssh.set_log_level("DEBUG")
-    asyncssh.set_debug_level(3)
+    asyncssh.set_debug_level(2)
     command_args = parse_args()
     sys.exit(main(command_args))
