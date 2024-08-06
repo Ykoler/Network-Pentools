@@ -1,6 +1,3 @@
-# Network-Pentools
-A collection of network attacking and defending tools programmed in Python.
-
 # SSH-Rogue-Session
 
 This project implements a simple SSH server and a script to attack the server using the Terrapin attack to initiate a rogue session.
