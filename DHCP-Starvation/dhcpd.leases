@@ -1,0 +1,919 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.4.3-P1
+
+# authoring-byte-order entry is generated, DO NOT DELETE
+authoring-byte-order little-endian;
+
+server-duid "\000\001\000\001-\356A\252\010\000'BA\316";
+
+lease 10.0.2.100 {
+  starts 6 2024/06/01 20:31:43;
+  ends 6 2024/06/01 20:41:43;
+  cltt 6 2024/06/01 20:31:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 08:00:27:1e:36:4a;
+  uid "\001\010\000'\0366J";
+  client-hostname "kali";
+}
+lease 10.0.2.101 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 39:64:3a:61:66:3a;
+}
+lease 10.0.2.102 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:63:3a:30:64:3a;
+}
+lease 10.0.2.103 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:32:3a:35:61:3a;
+}
+lease 10.0.2.104 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:63:3a:38:38:3a;
+}
+lease 10.0.2.105 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:33:3a:36:38:3a;
+}
+lease 10.0.2.106 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:35:3a:32:32:3a;
+}
+lease 10.0.2.107 {
+  starts 6 2024/06/01 20:34:40;
+  ends 6 2024/06/01 20:44:40;
+  cltt 6 2024/06/01 20:34:40;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 61:32:3a:65:31:3a;
+}
+lease 10.0.2.108 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:65:3a:62:36:3a;
+}
+lease 10.0.2.109 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 30:32:3a:39:33:3a;
+}
+lease 10.0.2.110 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:61:3a:64:63:3a;
+}
+lease 10.0.2.111 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:61:3a:36:64:3a;
+}
+lease 10.0.2.112 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:62:3a:65:64:3a;
+}
+lease 10.0.2.113 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:38:3a:36:66:3a;
+}
+lease 10.0.2.114 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 30:32:3a:35:30:3a;
+}
+lease 10.0.2.115 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:38:3a:38:38:3a;
+}
+lease 10.0.2.116 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:31:3a:65:37:3a;
+}
+lease 10.0.2.117 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:63:3a:64:31:3a;
+}
+lease 10.0.2.118 {
+  starts 6 2024/06/01 20:34:41;
+  ends 6 2024/06/01 20:44:41;
+  cltt 6 2024/06/01 20:34:41;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:33:3a:39:65:3a;
+}
+lease 10.0.2.119 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:36:3a:37:37:3a;
+}
+lease 10.0.2.120 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:66:3a:38:33:3a;
+}
+lease 10.0.2.121 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:61:3a:61:38:3a;
+}
+lease 10.0.2.122 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:66:3a:33:32:3a;
+}
+lease 10.0.2.123 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:39:3a:32:35:3a;
+}
+lease 10.0.2.124 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:61:3a:39:65:3a;
+}
+lease 10.0.2.125 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 30:36:3a:38:32:3a;
+}
+lease 10.0.2.126 {
+  starts 6 2024/06/01 20:34:42;
+  ends 6 2024/06/01 20:44:42;
+  cltt 6 2024/06/01 20:34:42;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:39:3a:35:34:3a;
+}
+lease 10.0.2.127 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 66:32:3a:37:35:3a;
+}
+lease 10.0.2.128 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:33:3a:61:34:3a;
+}
+lease 10.0.2.129 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:39:3a:30:39:3a;
+}
+lease 10.0.2.130 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:35:3a:38:31:3a;
+}
+lease 10.0.2.131 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:34:3a:37:65:3a;
+}
+lease 10.0.2.132 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:64:3a:34:39:3a;
+}
+lease 10.0.2.133 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 39:33:3a:65:39:3a;
+}
+lease 10.0.2.134 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:31:3a:64:66:3a;
+}
+lease 10.0.2.135 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:33:3a:30:30:3a;
+}
+lease 10.0.2.136 {
+  starts 6 2024/06/01 20:34:43;
+  ends 6 2024/06/01 20:44:43;
+  cltt 6 2024/06/01 20:34:43;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:37:3a:63:66:3a;
+}
+lease 10.0.2.137 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:63:3a:33:38:3a;
+}
+lease 10.0.2.138 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:63:3a:66:35:3a;
+}
+lease 10.0.2.139 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:62:3a:30:34:3a;
+}
+lease 10.0.2.140 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:35:3a:63:36:3a;
+}
+lease 10.0.2.141 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:65:3a:37:61:3a;
+}
+lease 10.0.2.142 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 31:33:3a:38:63:3a;
+}
+lease 10.0.2.143 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:31:3a:30:32:3a;
+}
+lease 10.0.2.144 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:34:3a:33:37:3a;
+}
+lease 10.0.2.145 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:63:3a:61:66:3a;
+}
+lease 10.0.2.146 {
+  starts 6 2024/06/01 20:34:44;
+  ends 6 2024/06/01 20:44:44;
+  cltt 6 2024/06/01 20:34:44;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 39:38:3a:30:62:3a;
+}
+lease 10.0.2.147 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:37:3a:64:31:3a;
+}
+lease 10.0.2.148 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:30:3a:61:34:3a;
+}
+lease 10.0.2.149 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 62:34:3a:66:37:3a;
+}
+lease 10.0.2.150 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:34:3a:32:31:3a;
+}
+lease 10.0.2.151 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:37:3a:35:62:3a;
+}
+lease 10.0.2.152 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:62:3a:61:35:3a;
+}
+lease 10.0.2.153 {
+  starts 6 2024/06/01 20:34:45;
+  ends 6 2024/06/01 20:44:45;
+  cltt 6 2024/06/01 20:34:45;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:61:3a:65:32:3a;
+}
+lease 10.0.2.154 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:37:3a:63:39:3a;
+}
+lease 10.0.2.155 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 61:39:3a:34:64:3a;
+}
+lease 10.0.2.156 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:33:3a:35:33:3a;
+}
+lease 10.0.2.157 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:65:3a:30:33:3a;
+}
+lease 10.0.2.158 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 62:34:3a:61:39:3a;
+}
+lease 10.0.2.159 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 39:38:3a:32:34:3a;
+}
+lease 10.0.2.160 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 65:37:3a:39:35:3a;
+}
+lease 10.0.2.161 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 37:64:3a:37:65:3a;
+}
+lease 10.0.2.162 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 61:31:3a:35:39:3a;
+}
+lease 10.0.2.163 {
+  starts 6 2024/06/01 20:34:46;
+  ends 6 2024/06/01 20:44:46;
+  cltt 6 2024/06/01 20:34:46;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:65:3a:33:32:3a;
+}
+lease 10.0.2.164 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:64:3a:32:61:3a;
+}
+lease 10.0.2.165 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:61:3a:36:63:3a;
+}
+lease 10.0.2.166 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 65:66:3a:35:31:3a;
+}
+lease 10.0.2.167 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 62:61:3a:62:33:3a;
+}
+lease 10.0.2.168 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:32:3a:37:61:3a;
+}
+lease 10.0.2.169 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 62:35:3a:35:38:3a;
+}
+lease 10.0.2.170 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:35:3a:35:34:3a;
+}
+lease 10.0.2.171 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:61:3a:31:31:3a;
+}
+lease 10.0.2.172 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:37:3a:33:35:3a;
+}
+lease 10.0.2.173 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:37:3a:34:63:3a;
+}
+lease 10.0.2.174 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:38:3a:33:37:3a;
+}
+lease 10.0.2.175 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:35:3a:39:36:3a;
+}
+lease 10.0.2.176 {
+  starts 6 2024/06/01 20:34:47;
+  ends 6 2024/06/01 20:44:47;
+  cltt 6 2024/06/01 20:34:47;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:32:3a:62:35:3a;
+}
+lease 10.0.2.177 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:62:3a:36:39:3a;
+}
+lease 10.0.2.178 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 35:32:3a:34:30:3a;
+}
+lease 10.0.2.179 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:36:3a:31:31:3a;
+}
+lease 10.0.2.180 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:64:3a:65:38:3a;
+}
+lease 10.0.2.181 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:61:3a:36:34:3a;
+}
+lease 10.0.2.182 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 37:39:3a:39:37:3a;
+}
+lease 10.0.2.183 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 61:36:3a:62:37:3a;
+}
+lease 10.0.2.184 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:34:3a:63:38:3a;
+}
+lease 10.0.2.185 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:35:3a:32:65:3a;
+}
+lease 10.0.2.186 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 39:61:3a:33:36:3a;
+}
+lease 10.0.2.187 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 63:61:3a:35:30:3a;
+}
+lease 10.0.2.188 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:63:3a:62:65:3a;
+}
+lease 10.0.2.189 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 66:37:3a:38:33:3a;
+}
+lease 10.0.2.190 {
+  starts 6 2024/06/01 20:34:48;
+  ends 6 2024/06/01 20:44:48;
+  cltt 6 2024/06/01 20:34:48;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 38:39:3a:35:64:3a;
+}
+lease 10.0.2.191 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 64:39:3a:64:32:3a;
+}
+lease 10.0.2.192 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 37:35:3a:66:30:3a;
+}
+lease 10.0.2.193 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 33:36:3a:36:61:3a;
+}
+lease 10.0.2.194 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 32:63:3a:63:61:3a;
+}
+lease 10.0.2.195 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 61:65:3a:32:63:3a;
+}
+lease 10.0.2.196 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 62:30:3a:62:30:3a;
+}
+lease 10.0.2.197 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 34:32:3a:31:66:3a;
+}
+lease 10.0.2.198 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 39:32:3a:34:30:3a;
+}
+lease 10.0.2.199 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 61:62:3a:33:38:3a;
+}
+lease 10.0.2.200 {
+  starts 6 2024/06/01 20:34:49;
+  ends 6 2024/06/01 20:44:49;
+  cltt 6 2024/06/01 20:34:49;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 36:33:3a:31:65:3a;
+}
